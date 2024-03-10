@@ -27,6 +27,12 @@ int main(void){
         printf("Total constant mem: %ld\n", prop.totalConstMem);
         printf("Max mem pitch: %ld\n", prop.memPitch);
         printf("Texture Alignement: %ld\n", prop.textureAlignement);
-        
+
+        printf("--- MP Information for device %d ---\n",i);
+        printf("Multiprocessor count : %d\n", prop.multiProcessorCount);
+        printf("Shared mem per mp: %ld\n", prop.sharedMemPerBlock);
+        printf("Registers per mp : %d\n", prop.regsPerBlock);
+        printf("Threads in wrap: %d\n", prop.wrapSize);
+        printf("")
     }
 }
